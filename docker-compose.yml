@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  python-app:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_ENV=development
+      - PYTHONUNBUFFERED=TRUE
+      - PORT=8080
+      - CONSUMER_KEY=
+      - ACCESS_TOKEN=
+      - ACCESS_TOKEN_SECRET=
+      - CONSUMER_SECRET=
